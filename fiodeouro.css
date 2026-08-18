@@ -1,0 +1,120 @@
+/* Configurações Gerais e Cores */
+:root {
+    --azul-marinho: #0a192f;
+    --ouro: #cbd5e1; /* Cor clara para os textos */
+    --ouro-destaque: #e3c289; /* Amarelo ouro para detalhes */
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo Azul Marinho Centralizado */
+body.landing-page {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Principal (Card) */
+.landing-card {
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo sutil para o card */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.brand-mark img {
+    width: 150px;           /* Aumenta o tamanho da imagem */
+    height: 150px;          /* Mantém a altura igual à largura para ficar um círculo perfeito */
+    object-fit: cover;      
+    border-radius: 50%;     
+    margin-bottom: 20px;
+    border: 3px solid var(--ouro-destaque); 
+}
+
+
+.eyebrow {
+    color: var(--ouro-destaque);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.landing-highligth {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.landing-description {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Botões e Ações */
+.button {
+    /* display: block; */
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Botão Versão Web */
+.button-secundary {
+    background-color: transparent;
+    color: var(--branco);
+    border: 2px solid var(--branco);
+}
+
+.button-secundary:hover {
+    background-color: var(--branco);
+    color: var(--azul-marinho);
+}
+
+/* Botão Instalar Aplicativo */
+.button-primary {
+    background-color: var(--ouro-destaque);
+    color: var(--azul-marinho);
+}
+
+.button-primary:hover {
+    background-color: #d97706; /* Ouro um pouco mais escuro */
+}
+
+/* Links do Botão */
+.landing-card a {
+    text-decoration: none;
+}
+
+/* Mensagem de Instalação */
+.install-message {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 15px;
+}
