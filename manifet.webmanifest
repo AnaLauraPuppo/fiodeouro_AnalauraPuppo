@@ -1,8 +1,8 @@
 {   
     "id": "./",    
     "name": "sistema de ocorrências",
-    "short_name": "Cardápio",
-    "start_url":"./cardapio.html",
+    "short_name": "FIO DE OURO",
+    "start_url":"./fiodeouro.html",
     "display": "standalone",
 
     "icons": [
